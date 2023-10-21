@@ -14,6 +14,9 @@ const db = require("./models");
 const usersRouter = require("./routes/Users");
 app.use("/auth", usersRouter);
 
+const todolist_Items_Router = require("./routes/todolist_Items");
+app.use("/todolist_Items", todolist_Items_Router);
+
 // /\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\//\/\/\/\/\/\/\/\/\/\/\/
 // Starting the Server & Connecting to the DB:
 
